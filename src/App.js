@@ -92,7 +92,6 @@ class App extends Component {
             this.setState({ matches });
             this.setState({correctGuesses});
             this.setState({clickMessage});
-
         }
     };
 
@@ -100,11 +99,9 @@ class App extends Component {
         return (
             <Wrapper>
                 <Title>Clickers React Dogs</Title>
-        
                 <h3 className="scoreSummary">
                     {this.state.clickMessage}
                 </h3>
-                
                 <h3 className="scoreSummary card-header">
                     Correct Guesses: {this.state.correctGuesses} 
                     <br />
@@ -122,7 +119,6 @@ class App extends Component {
                 ))}
                 </div>
                 </div>
-
             </Wrapper>
         );
     }
